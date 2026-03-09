@@ -1,87 +1,224 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aakash Srivastava - Portfolio</title>
+    <title>Aakash Srivastava | Software Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <header>
-        <div class="logo">AAKASH SRIVASTAVA</div>
-        <nav>
-            <a href="#about">About</a>
-            <a href="#experience">Experience</a>
-            <a href="#education">Education</a>
-            <a href="#contact">Contact</a>
-        </nav>
+    <div class="background-glow"></div>
+    
+    <header class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <a href="#">AS.</a>
+            </div>
+            <nav class="nav-links">
+                <a href="#about" class="nav-link">About</a>
+                <a href="#experience" class="nav-link">Experience</a>
+                <a href="#projects" class="nav-link">Projects / Certs</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </nav>
+        </div>
     </header>
 
-    <main>
-        <section id="about">
-            <h2>→ About</h2>
-            <p>Hi, I'm Aakash. I'm a software developer passionate about building innovative solutions. This is where you can write your introduction - tell visitors who you are, what drives you, and what makes you unique in your field.</p>
-
-            <h3>Skills & Technologies</h3>
-            <ul>
-                <li>JavaScript / TypeScript</li>
-                <li>Python</li>
-                <li>React / Node.js</li>
-                <li>Git & Version Control</li>
-                <li>Add your key skills here</li>
-            </ul>
-
-            <h3>Interests</h3>
-            <p>Share your interests here - whether they're related to technology, open source contributions, side projects, or personal hobbies that shape your perspective as a developer.</p>
-
-            <h3>Current Status</h3>
-            <p>Currently working on exciting projects and always open to new opportunities. Update this section with what you're currently focused on.</p>
-        </section>
-
-        <section id="experience">
-            <h2>→ Experience</h2>
-
-            <article class="experience-entry">
-                <h3>Software Engineer</h3>
-                <div class="company">Company Name</div>
-                <p>Brief description of your role, responsibilities, and key achievements. Focus on the impact you made and technologies you worked with.</p>
-            </article>
-
-            <article class="experience-entry">
-                <h3>Developer Position</h3>
-                <div class="company">Another Company</div>
-                <p>Describe your contributions, the projects you worked on, and skills you developed in this role.</p>
-            </article>
-
-            <article class="experience-entry">
-                <h3>Junior Developer</h3>
-                <div class="company">Previous Company</div>
-                <p>Your early career experiences and how they helped shape your development journey.</p>
-            </article>
-        </section>
-
-        <section id="education">
-            <h2>→ Education</h2>
-
-            <article class="education-entry">
-                <h3>Bachelor of Science in Computer Science</h3>
-                <div class="institution">University Name</div>
-            </article>
-
-            <article class="education-entry">
-                <h3>Relevant Certification or Degree</h3>
-                <div class="institution">Institution Name</div>
-            </article>
-        </section>
-
-        <section id="contact">
-            <h2>→ Contact</h2>
-            <div class="contact-links">
-                <a href="mailto:your@email.com">📧 your@email.com</a>
-                <a href="https://github.com/aakashistheone" target="_blank" rel="noopener noreferrer">🔗 github.com/aakashistheone</a>
-                <a href="https://linkedin.com/in/yourprofile" target="_blank" rel="noopener noreferrer">🔗 linkedin.com/in/yourprofile</a>
+    <main class="container">
+        <!-- HERO SECTION -->
+        <section id="hero" class="hero fade-in-up">
+            <p class="greeting">Hi, my name is</p>
+            <h1 class="hero-title">Aakash Srivastava.</h1>
+            <h2 class="hero-subtitle">Building scalable microservices.</h2>
+            <p class="hero-desc">
+                I'm a Senior Backend Engineer with 6+ years of experience building high-availability distributed systems. I design and deliver cloud-native solutions that drive performance, reliability, and business growth.
+            </p>
+            <div class="hero-actions">
+                <a href="#contact" class="btn btn-primary">Get In Touch</a>
+                <a href="#experience" class="btn btn-secondary">View Experience</a>
             </div>
         </section>
+
+        <!-- ABOUT & SKILLS SECTION -->
+        <section id="about" class="section fade-in-up">
+            <h2 class="section-title"><span>01.</span> About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>I am a Senior Backend Engineer who specializes in crafting highly reliable distributed infrastructure. Over the last six years, I've had the privilege of working with top-tier clients in healthcare, telecommunications, and mobility.</p>
+                    <p>My primary focus is on ensuring 99.9% uptime, driving performance enhancements, and improving developer CI/CD workflows so teams can move faster with less friction.</p>
+                </div>
+                
+                <div class="skills-container">
+                    <h3 class="skills-title">Core Technologies:</h3>
+                    <ul class="skills-grid">
+                        <li>Java 8 / Java 21</li>
+                        <li>Spring Boot / Cloud</li>
+                        <li>Spring WebFlux & GraphQL</li>
+                        <li>Docker & Kubernetes</li>
+                        <li>AWS (ECS, Lambda, DynamoDB)</li>
+                        <li>SQL & NoSQL</li>
+                        <li>Terraform & CI/CD</li>
+                        <li>Git</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- EXPERIENCE SECTION -->
+        <section id="experience" class="section fade-in-up">
+            <h2 class="section-title"><span>02.</span> Experience</h2>
+            <div class="projects-grid">
+                
+                <article class="project-card">
+                    <header class="project-header">
+                        <div class="project-top">
+                            <svg xmlns="http://www.w3.org/w/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path></svg>
+                        </div>
+                        <h3 class="project-title">Associate Technology L2</h3>
+                        <div class="project-company">Publicis Sapient (Fortune 10 US Healthcare Client)</div>
+                        <div class="project-desc">
+                            <p>Working on Product Services supporting highly-available healthcare platforms infrastructure.</p>
+                        </div>
+                    </header>
+                    <footer class="project-tech-list">
+                        <span>Mar 2025 - Present</span>
+                    </footer>
+                </article>
+
+                <article class="project-card">
+                    <header class="project-header">
+                        <div class="project-top">
+                            <svg xmlns="http://www.w3.org/w/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path></svg>
+                        </div>
+                        <h3 class="project-title">Application Development Analyst</h3>
+                        <div class="project-company">Accenture (Fortune 50 US Telecom Client)</div>
+                        <div class="project-desc">
+                            <p>Engineered an ecosystem of 10+ microservices on AWS, handling 200k+ events/month. Modernized CI pipelines and created REST APIs/CLI tools, saving 40 hours of manual effort monthly.</p>
+                        </div>
+                    </header>
+                    <footer class="project-tech-list">
+                        <span>Java 8</span><span>Spring Boot</span><span>AWS</span><span>Terraform</span>
+                    </footer>
+                </article>
+
+                <article class="project-card">
+                    <header class="project-header">
+                        <div class="project-top">
+                            <svg xmlns="http://www.w3.org/w/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path></svg>
+                        </div>
+                        <h3 class="project-title">Assistant System Engineer</h3>
+                        <div class="project-company">Tata Consultancy Services (Top US Mobility Client)</div>
+                        <div class="project-desc">
+                            <p>Decreased API response times by 20% and boosted query performance by 25% via SQL optimization. Boosted test coverage by 30% for core ticketing functionality.</p>
+                        </div>
+                    </header>
+                    <footer class="project-tech-list">
+                        <span>Java</span><span>Spring Core</span><span>Hibernate</span><span>SQL</span>
+                    </footer>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- PROJECTS & CERTS SECTION -->
+        <section id="projects" class="section fade-in-up">
+            <h2 class="section-title"><span>03.</span> Projects, Certs & Education</h2>
+            <div class="projects-grid">
+                
+                <!-- Project -->
+                <article class="project-card">
+                    <header class="project-header">
+                        <h3 class="project-title">Ticket Booking System</h3>
+                        <div class="project-company">BookMyShow Clone</div>
+                        <div class="project-desc">
+                            <p>Designed and built a highly-scalable entertainment ticket booking backend simulation.</p>
+                        </div>
+                    </header>
+                    <footer class="project-tech-list">
+                        <span>Java 21</span><span>Spring Boot 4</span><span>Gradle</span>
+                    </footer>
+                </article>
+
+                <!-- Certifications -->
+                <div style="display: flex; flex-direction: column; gap: 20px;">
+                    <div class="education-card" style="border-left: 3px solid var(--accent); padding: 25px; border-radius: 0 8px 8px 0; background: var(--card-bg); height: 100%;">
+                        <div class="edu-details">
+                            <h3 class="edu-degree">AWS Solutions Architect</h3>
+                            <p class="edu-institution" style="margin-bottom: 5px;">Amazon Web Services (SAA-C03)</p>
+                            <p class="edu-institution" style="font-size: 0.8rem; opacity: 0.7;">Jun 2024 - Jun 2027</p>
+                        </div>
+                    </div>
+                    <div class="education-card" style="border-left: 3px solid var(--accent); padding: 25px; border-radius: 0 8px 8px 0; background: var(--card-bg); height: 100%;">
+                        <div class="edu-details">
+                            <h3 class="edu-degree">AWS Developer Associate</h3>
+                            <p class="edu-institution" style="margin-bottom: 5px;">Amazon Web Services (DVA-C02)</p>
+                            <p class="edu-institution" style="font-size: 0.8rem; opacity: 0.7;">Jan 2025 - Jan 2028</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Education -->
+                <div class="education-card" style="border-left: 3px solid var(--text-muted); padding: 25px; border-radius: 0 8px 8px 0; background: var(--card-bg); height: 100%;">
+                    <div class="edu-details">
+                        <h3 class="edu-degree">Bachelor of Computer Applications</h3>
+                        <p class="edu-institution" style="margin-bottom: 5px;">Babu Banarasi Das University, Lucknow</p>
+                        <p class="edu-institution" style="font-size: 0.8rem; opacity: 0.7;">Aug 2017 - Aug 2020</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- CONTACT SECTION -->
+        <section id="contact" class="section fade-in-up contact-section">
+            <h2 class="section-title"><span>04.</span> What's Next?</h2>
+            <h3 class="contact-title">Get In Touch</h3>
+            <p class="contact-desc">
+                Currently looking for new opportunities to bridge the gap between back-end robustness and scalable delivery. Whether you have a question or just want to chat, my inbox is always open.
+            </p>
+            <a href="mailto:aakashistheone@gmail.com" class="btn btn-primary contact-btn">Say Hello</a>
+        </section>
     </main>
+
+    <footer class="site-footer">
+        <div class="social-links">
+            <a href="https://github.com/aakashistheone" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                <svg xmlns="http://www.w3.org/w/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="social-icon"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+            </a>
+            <a href="https://linkedin.com/in/aakashistheone" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                <svg xmlns="http://www.w3.org/w/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="social-icon"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+            </a>
+            <a href="mailto:aakashistheone@gmail.com" aria-label="Email">
+                <svg xmlns="http://www.w3.org/w/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="social-icon"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+            </a>
+        </div>
+        <p class="footer-copy">Built with 💡 by Aakash Srivastava</p>
+    </footer>
+
+    <script>
+        // Simple Intersection Observer to fade in elements on scroll
+        const faders = document.querySelectorAll('.fade-in-up');
+        const appearOptions = {
+            threshold: 0.1,
+            rootMargin: "0px 0px -50px 0px"
+        };
+
+        const appearOnScroll = new IntersectionObserver(function(entries, observer) {
+            entries.forEach(entry => {
+                if (!entry.isIntersecting) {
+                    return;
+                } else {
+                    entry.target.classList.add('appear');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, appearOptions);
+
+        faders.forEach(fader => {
+            appearOnScroll.observe(fader);
+        });
+    </script>
 </body>
 </html>
